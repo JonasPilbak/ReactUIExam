@@ -2,20 +2,20 @@ export const COLUMNS =
 [
 
     {
-        Header: 'Title', 
-        accessor: 'title'
+        Header: 'ID', 
+        accessor: 'id'
 
     },
 
     {
-        Header: 'Description',
-        accessor: 'description'
+        Header: 'First Name',
+        accessor: 'first_name'
 
     },
     
     {
-        Header: 'Text',
-        accessor: 'text'
+        Header: 'Last Name',
+        accessor: 'last_name'
 
     },
     

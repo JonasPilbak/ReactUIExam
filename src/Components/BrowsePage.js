@@ -12,7 +12,7 @@ class BrowsePage extends Component {
            
             <div className="Post">
             
-            <PostForm/>
+           
             
             </div>
             <div className="table_display">

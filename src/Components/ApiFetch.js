@@ -59,7 +59,7 @@ class ApiFetch extends React.Component {
 
               
               <table className="container">
-                  <caption><h2>Ideas</h2></caption>
+                
                   <tr>
 
               <th>Title</th>
@@ -72,8 +72,8 @@ class ApiFetch extends React.Component {
                           
                            
 
-                             <td>{item.title}</td>
-                        
+                             <td className="titles">{item.title}</td>
+                            
                            
                             
                            
@@ -87,6 +87,9 @@ class ApiFetch extends React.Component {
                           
                                 
                             <td>     {item.ideaID}</td>
+                            <td className="right_row">
+                                <button>CLick me</button>
+                            </td>
                           
                            {/* <div id="Name"> ideaID: {item.ideaID}</div> 
                            <div id="Email"> companyID: {item.companyID}</div>
@@ -97,7 +100,9 @@ class ApiFetch extends React.Component {
                            <div id="Name"> description: {item.description}</div> 
                            <div id="Email"> text: {item.text}</div> */}
                         </tr>
+                        
                     ))}
+                    
                 </table>
                
             </div>

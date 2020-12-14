@@ -14,8 +14,7 @@ class TableFetch extends Component {
           this.setState({
             posts: res.data,
             data: res.data.slice(0, 5),
-            pages: res.data.length / 5,
-            loading: false
+            
           });
         });
       }
@@ -24,46 +23,29 @@ class TableFetch extends Component {
           {
             Header: "User ID",
             accessor: "id",
-            style: {
-              textAlign: "right"
-            },
-            width: 100,
-            maxWidth: 100,
-            minWidth: 100
           },
           {
             Header: "ID",
             accessor: "userId",
-            style: {
-              textAlign: "right"
-            },
-            width: 100,
-            maxWidth: 100,
-            minWidth: 100
+           
           },
           {
             Header: "Title",
             accessor: "title",
-            sortable: false,
-            filterable: false
+           
           },
           {
             Header: "Content",
             accessor: "body",
-            sortable: false,
-            filterable: false
+            
           }
         ];
         return (
           <ReactTable
             columns={columns}
-            data={this.state.data}
-            pages={this.state.pages}
-           
-          
-          
-           
-          />
+            data={this.state.data} />
+
+         
         );
       }
     }
