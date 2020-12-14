@@ -1,30 +1,31 @@
-.Api {
-  display: grid;
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-  grid-template: 1fr 5fr 1fr / 0.5fr 1fr 1fr 1fr;
-}
 
-.items {
-  width: 500px;
-  height: 50px;
+
+
+table, th, td
+{
   border: 1px solid black;
-
-  list-style-type: none;
-  margin: 0;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
+ 
+}
+th, td
+{
+  padding: 5px;
+  
+}
+th
+{
+  text-align: left;
+  
 }
 
-.items #Name {
-  flex: 50%;
-  display: grid;
+table{
+  border-spacing: 5px;
 }
-.items #Email {
-  flex: 50%;
-  display: grid;
+
+tr:nth-child(even){
+
+  background-color: #eee;
 }
+tr:nth-child(odd){
+  background-color: #fff;
+}
+

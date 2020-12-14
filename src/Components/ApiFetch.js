@@ -1,6 +1,8 @@
 import React from 'react';
-import Sidebar from "./Sidebar";
 import "../Api.css";
+
+
+
 
 class ApiFetch extends React.Component {
 
@@ -24,7 +26,7 @@ class ApiFetch extends React.Component {
      */
     componentDidMount() {
 
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch('http://localhost:46897/api/Ideas')
             .then(res => res.json())
             .then(json => {
                 this.setState({
@@ -50,19 +52,54 @@ class ApiFetch extends React.Component {
             return <div>Loading...</div>;
 
         return (
-            <div className="Api">
-                <Sidebar/>
+            <div  className="Api">
+
+               
+              
 
               
-                <ul className="container">
+              <table className="container">
+                  <caption><h2>Ideas</h2></caption>
+                  <tr>
+
+              <th>Title</th>
+                            <th>Description</th>
+                            <th>Text</th>
+                            <th>Key</th>
+                  </tr>
                     {items.map(item => (
-                        <li className="items" key={item.id}>
+                        <tr className="items" key={item.ideaID}>
                           
-                           <div id="Name"> Name: {item.name}</div> 
-                           <div id="Email"> Email: {item.email}</div>
-                        </li>
+                           
+
+                             <td>{item.title}</td>
+                        
+                           
+                            
+                           
+
+                            <td>  {item.description}</td>
+                          
+                           
+
+                            <td> {item.text}</td>
+                        
+                          
+                                
+                            <td>     {item.ideaID}</td>
+                          
+                           {/* <div id="Name"> ideaID: {item.ideaID}</div> 
+                           <div id="Email"> companyID: {item.companyID}</div>
+                           <div id="Name"> userID: {item.userID}</div> 
+                           <div id="Email"> priorityID: {item.priorityID}</div>
+                           <div id="Name"> ideaStatusID: {item.ideaStatusID}</div> 
+                           <div id="Email"> title: {item.title}</div>
+                           <div id="Name"> description: {item.description}</div> 
+                           <div id="Email"> text: {item.text}</div> */}
+                        </tr>
                     ))}
-                </ul>
+                </table>
+               
             </div>
         );
 

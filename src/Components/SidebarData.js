@@ -32,12 +32,7 @@ export const SidebarData = [
 
     },
 
-    {
-        title: "Something",
-        icon: <CollectionsIcon/>,
-        link: "/overview/test",
-
-    },
+  
  
 ];
 

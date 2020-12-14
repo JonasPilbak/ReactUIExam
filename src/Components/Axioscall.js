@@ -1,8 +1,7 @@
 import React from 'react';
 
 import axios from 'axios';
-import Sidebar from "./Sidebar";
-import PostRequest from "./PostRequest";
+
 export default class AxiosCall extends React.Component {
   state = {
     persons: []

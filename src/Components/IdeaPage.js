@@ -4,7 +4,6 @@ import "../IdeaPages.css";
 import Idinput from "./Idinput";
 import TextAreacomp from "./TextAreacomp";
 import Taginput from "./TagInput";
-import Titleinput from "./TitleInput";
 import Text from "./Text"
 class IdeaPage extends Component {
     constructor(props) {
@@ -18,7 +17,7 @@ class IdeaPage extends Component {
             <div className="inputs">
                 <SideBar/>
                 <div className="title">
-                <Titleinput/>
+                
                 </div>
                   <div className="Idinput">
 
@@ -34,23 +33,24 @@ class IdeaPage extends Component {
 
 </div>
 <div className="checkboxes">
-
-    <Text/>
-    <Text/>
-    <Text/>
-    <Text/>
-    <Text/>
+   
+   <p>1<Text/></p>
+   <p>2<Text/></p>
+   <p>3<Text/></p>
+   <p>4<Text/></p>
+   <p>5<Text/></p>
             
 
 
 </div>
 <div className="checkboxstuff">
 
-<Text/>
-    <Text/>
-    <Text/>
-    <Text/>
-    <Text/>
+ 
+<p>1<Text/></p>
+   <p>2<Text/></p>
+   <p>3<Text/></p>
+   <p>4<Text/></p>
+   <p>5<Text/></p>
 </div>
 
 

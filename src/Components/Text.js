@@ -7,12 +7,13 @@ class Text extends Component {
  
         this.state = {
          checkbox: false,
-         inputValue: ""
+        
         }
    }
  
    handleCheckbox(e){
      this.setState({checkbox: e.target.checked})
+   
    }
  
    handleInput(e){
@@ -23,7 +24,7 @@ class Text extends Component {
         return ( 
 
             <div>
-              <p>1</p>
+           
              <input  type="checkbox" onChange={this.handleCheckbox.bind(this)} checked={this.state.checkbox}/>
             
           </div>
